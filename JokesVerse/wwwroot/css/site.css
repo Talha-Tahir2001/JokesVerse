@@ -1,0 +1,85 @@
+/* Set a base font size */
+html {
+    font-size: 14px;
+}
+
+/* Increase font size on larger screens */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Add a subtle focus style for interactive elements */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.5), 0 0 0 0.25rem #258cfb;
+}
+
+/* Set a minimum height for the HTML element */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Add margin to the bottom of the body */
+body {
+    margin-bottom: 60px;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Style headings */
+h1, h2, h3 {
+    color: #333; /* Dark text color */
+}
+
+/* Style links */
+a {
+    color: #258cfb; /* Blue link color */
+    text-decoration: none; /* Remove underline by default */
+}
+
+    /* Style links on hover */
+    a:hover {
+        text-decoration: underline; /* Add underline on hover */
+    }
+
+/* Add padding to headings and paragraphs for better readability */
+h1, h2, h3, p {
+    padding: 10px;
+}
+
+/* Style buttons */
+.btn {
+    background-color: #258cfb; /* Blue button background */
+    color: #fff; /* White button text */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Add rounded corners to buttons */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+    /* Style buttons on hover */
+    .btn:hover {
+        background-color: #007bff; /* Darker blue on hover */
+    }
+/* CSS for the Fade-In Animation */
+.fade-in {
+    opacity: 0; /* Start with 0% opacity (invisible) */
+    animation: fadeIn ease-in 1s; /* Apply animation with 1-second duration */
+    animation-fill-mode: forwards; /* Maintain the final state of opacity after animation */
+}
+
+/* Keyframes for the Fade-In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with 0% opacity (invisible) */
+    }
+
+    100% {
+        opacity: 1; /* End with 100% opacity (fully visible) */
+    }
+}
